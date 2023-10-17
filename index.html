@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"></link>
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Usuario</h1>
+        <form id="registro">
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+            <br>
+            <label for="telefono">Número de teléfono:</label>
+            <input type="tel" id="telef" name="telefono" pattern="[0-9]{9}" required>
+            <br>
+            <label for="contrasenia">Contraseña:</label>
+            <input type="password" id="contra" name="contrasenia" required>
+            <br>
+            <label for="confirmaContrasenia">Confirmar Contraseña:</label>
+            <input type="password" id="confirma" name="confirmaContrasenia" required>
+            <br>
+            <label for="aceptaTerms">Acepto los términos y condiciones:</label>
+            <input type="checkbox" id="terms" name="aceptaTerms" required>
+            <br>
+            <button type="submit" id="boton">Registrar cuenta</button>
+        </form>
+
+        <a href="http://127.0.0.1:3000/DWEC/Portfolio/index.html"><p>Portfolio personal</p></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
